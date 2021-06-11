@@ -1,1 +1,4 @@
-# typescript-fundamentals
+# Typescript fundamentals contents
+## Topics
+
+- [Types]
