@@ -1,8 +1,9 @@
 import express from "express";
-
+import { userController } from "./controller";
 const app = express();
 
 app.get("/", (req, res) => {
-  return res.json({ message: "Hello World" });
+  const data = userController(req, res);
+  return res.json(data);
 });
 app.listen(3333);
