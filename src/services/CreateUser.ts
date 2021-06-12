@@ -1,14 +1,4 @@
-interface TechObject {
-  title: string;
-  experience: number;
-}
-
-interface CreateUserData {
-  name?: string;
-  email: string;
-  password: string;
-  techs: Array<string | TechObject>;
-}
+import { CreateUserData } from "../types/CreateUser";
 
 export default function createUser({
   name,

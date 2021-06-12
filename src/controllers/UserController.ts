@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import createUser from "./services/CreateUser";
+import createUser from "../services/CreateUser";
 
-export function userController(req: Request, res: Response) {
+export function UserController(req: Request, res: Response) {
   const user = createUser({
     name: "Cleyton",
     email: "cleytonb40@gmail",

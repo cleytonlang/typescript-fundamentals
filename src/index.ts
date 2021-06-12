@@ -1,9 +1,9 @@
 import express from "express";
-import { userController } from "./controller";
+import { UserController } from "./controllers/UserController";
 const app = express();
 
 app.get("/", (req, res) => {
-  const data = userController(req, res);
+  const data = UserController(req, res);
   return res.json(data);
 });
 app.listen(3333);

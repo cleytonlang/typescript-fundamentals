@@ -4,10 +4,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
-var controller_1 = require("./controller");
+var UserController_1 = require("./controllers/UserController");
 var app = express_1.default();
 app.get("/", function (req, res) {
-    var data = controller_1.userController(req, res);
+    var data = UserController_1.UserController(req, res);
     return res.json(data);
 });
 app.listen(3333);
