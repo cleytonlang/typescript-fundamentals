@@ -1,6 +1,6 @@
 import { CreateUserData } from "../types/CreateUser";
 
-export default function createUser({
+export default function CreateUser({
   name,
   email,
   password,
