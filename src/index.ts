@@ -1,7 +1,7 @@
 import express from "express";
+const app = express();
 import { UserController } from "./controllers/UserController";
 import { ProdutcController } from "./controllers/ProductController";
-const app = express();
 
 app.get("/users", (req, res) => {
   const data = UserController(req, res);
